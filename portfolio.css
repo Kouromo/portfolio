@@ -7,15 +7,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
-    background:linear-gradient(#692389, #c59cd8); /* Couleur d'arrière-plan */
+    background:linear-gradient(#692389, #c59cd8);
     height: 100vh;
-    
-    /*
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    */
 }
 
 /* ECRAN DE TÉLÉPHONE ET PETITE DIMENSIONS D'ÉCRANS*/
@@ -66,6 +59,36 @@ header {
         grid-row: 1;
         grid-column: 4;
     }
+
+
+    .sous{
+        display: none;
+    }
+    
+    nav > ul li:hover .sous{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .sous li {
+        float: none;
+        text-align: left;
+    }
+    
+    .sous a{
+        padding: 10px;
+        color: white;
+        border-bottom: none;
+        background-color: darkgreen;
+        width: 200px;
+    }
+    
+    .sous a:hover{
+        border-bottom: none;
+        background-color: rgb(111, 186, 111);
+    }
+    
 }
     
 
@@ -211,29 +234,6 @@ h1 {
     text-decoration: none;
 
 }
-
-/*
-#main-title button {
-    color: white;
-    background-color: #F05F40;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px 42vw;
-    font-size: medium;
-    font-weight: bolder;
-}
-
-button {
-    border-radius: 25px;
-    border: none;
-    padding: 15px 15px;
-    cursor: pointer;
-}
-
-#main-title span,
-#main-title span {
-    margin: 0% 30%
-}
-*/
 
 /******************************FIN DE HEADER**************************/
 
