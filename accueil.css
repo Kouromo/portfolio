@@ -18,23 +18,26 @@ li{
 /* ECRAN DE TÉLÉPHONE ET PETITE DIMENSIONS D'ÉCRANS*/
 @media screen and (max-width: 750px) {
     #liens {
+        display: none;
         flex-direction: column;
+        background-color: #313131;
     }
 
     .burger-menu {
         display: block;
-        margin-right: 10px;
+        justify-self: end;
+        margin-right: 20px;
     }
 
     .menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
         left: 0;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-bottom: solid white 1px;
     }
 
 
@@ -49,20 +52,32 @@ li{
     }
 
     .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-    .menu li {
-        margin-right: 20px;
-    }
+    width: 25px;
+    height: 3px;
+    background-color: #ececec;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+}
 
-    #navigation {
-        justify-self: end;
-    }
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+.menu li {
+    margin-right: 20px;
+}
+
+#navigation {
+    justify-self: end;
+}
+
+.sous {
+    display: none;
+}
 }
 
 /* GRAND ECRANS*/
@@ -129,12 +144,6 @@ li{
 
 /**********************************HEADER**************************/
 
-
-.sous {
-    display: none;
-}
-
-
 #titre {
     color: white;
     grid-row: 1;
@@ -175,6 +184,11 @@ nav
     min-height: 50px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #313131;
+    width: 100%;
 }
 
 /****FIN DE NAV*******/
