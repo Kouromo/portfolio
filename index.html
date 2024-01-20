@@ -2,28 +2,33 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="portfolio.css" />
-        <title>Portfolio</title>
+        <link rel="stylesheet" href="accueil.css" />
+        <title>Page d'accueil de Matéo</title>
         <link rel="icon" href="websiteicon.png">
-        <meta name="viewport" content="width=device_device_width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/7c2235d2ba.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header aria-label="Présentation">
             <div id="soulignage">
-                <p id="titre">PORTFOLIO</p>
+                <p id="titre">Kouromo</p>
                 <nav id="navigation" aria-label="Menu du portfolio">
-                    <ul id="liens">
+                    <div class="burger-menu" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul id="liens" class="menu">
                         <li>
-                            <a href="#" aria-current="page" class="deroulant">PORTFOLIO</a>
+                            <a href="#"class="deroulant">ACCUEIL</a>
                             <ul class="sous">
                                 <li><a href="#hebergementSection" aria-label="Défilement sur la section à propos de l'auteur">A PROPOS DE MOI</a></li>
-                                <li><a href="#informations" aria-label="Défilement sur la section des compétences de l'auteur">COMPÉTENCES</a></li>
+                                <li><a href="#interets" aria-label="Défilement sur la section des centres d'intérêts de l'auteur">INTÉRÊTS</a></li>
                                 <li><a href="#infosContact" aria-label="Défilement sur la section de contact de l'auteur">CONTACT</a></li>
                             </ul>
                         </li>
-                        <li><a href="cv.html" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
+                        <li><a href="cv.html" aria-current="page" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,10 +51,10 @@
                     à ce que j'écris grâce à la programmation et  je souhaite travailler dans un domaine où je peux retrouver ce plaisir. Étant également
                     passioné du jeu vidéo, j'espère pour en faire mon métier.
                 </p>
-                <a href="#informations" aria-label="Défilement vers les compétences de l'auteur">VOIR MES COMPÉTENCES</a>
+                <a href="#interets" aria-label="Défilement vers les compétences de l'auteur">VOIR MES COMPÉTENCES</a>
             </section>
 
-            <section id="informations" aria-label="Compétences de l'auteur">
+            <section id="interets" aria-label="Centres d'intérêt de Matéo">
                 <h2>Compétences</h2>
                 <div class="LigneBlanche"></div>
                 <article>

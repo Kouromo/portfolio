@@ -125,12 +125,7 @@ header
 
 nav
 {
-    grid-row: 1;
-    grid-column: 2;
-    justify-content: start;
     align-self: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #liens li
