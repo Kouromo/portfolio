@@ -1,18 +1,7 @@
 /******Mise en page générale de la page**********/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body
 {
     background-color: #c59cd8;
-}
-
-
-li{
-    list-style-type: none;
 }
 
 #infosPersos

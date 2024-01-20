@@ -9,3 +9,7 @@ function toggleMenu() {
         menu.style.display = 'flex';
     }
 }
+
+function sendMail() {
+    
+}
