@@ -12,6 +12,10 @@ header {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
     }
+
+    .phoneReturn {
+        display: none;
+    }
 }
 
 #main-title {
@@ -262,6 +266,7 @@ h1 {
 footer
 {
     min-height: 40vh;
+    max-width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 60%;
@@ -314,7 +319,7 @@ footer
     grid-column: 1;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 40% 40% 1fr;
 }
 
 #mailEtudiant
