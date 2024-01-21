@@ -317,14 +317,14 @@ footer
     grid-template-columns: repeat(4, 1fr);
 }
 
-#telephone
+#mailEtudiant
 {
     grid-row: 1;
     grid-column: 2;
     justify-self: center;
 }
 
-#mail
+#mailPerso
 {
     grid-row: 1;
     grid-column: 3;

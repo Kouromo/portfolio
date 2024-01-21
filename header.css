@@ -163,3 +163,7 @@ nav
     font-weight: bolder;
     text-decoration: none;
 }
+
+header {
+    min-height: 50px;
+}
