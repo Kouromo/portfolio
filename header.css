@@ -90,7 +90,7 @@
         padding: 10px;
         color: white;
         border-bottom: none;
-        background-color: rgb(64, 1, 64);
+        background-color: #313131;
         width: 200px;
     }
 
@@ -114,6 +114,12 @@
         display: none;
         cursor: pointer;
     }
+
+    #navigation > ul > li > a:hover
+    {
+        color: rgb(194, 136, 194);
+    }
+
 }
 
 /**********************************HEADER**************************/
