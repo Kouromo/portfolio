@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section#competences {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #692389;
+}
+
+.intro-image {
+    width: 100%; /* Assurez-vous que l'image prend toute la largeur de la section */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour les liens */
+a {
+    color: #692389;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #450f5a;
+}
+
+/* Styles pour le menu burger et la navigation */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#liens {
+    list-style-type: none;
+    display: inline-flex;
+    width: 90%;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+#liens a {
+    color: #692389;
+    font-size: medium;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav {
+    align-self: center;
+}
+
+#liens li {
+    text-align: center;
+}
+
+/* Ajoutez d'autres styles au besoin */
