@@ -20,9 +20,6 @@ section#competences {
     padding: 20px;
 }
 
-h2 {
-    color: #692389;
-}
 
 .intro-image {
     width: 100%; /* Assurez-vous que l'image prend toute la largeur de la section */
@@ -34,55 +31,48 @@ p {
     line-height: 1.6;
 }
 
-ul {
-    list-style-type: disc;
+main ul {
     margin-left: 20px;
 }
 
-li {
+main li {
     margin-bottom: 10px;
 }
 
 /* Styles spécifiques pour les liens */
-a {
+main a {
     color: #692389;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover {
+main a:hover {
     color: #450f5a;
 }
 
-/* Styles pour le menu burger et la navigation */
-.burger-menu {
-    display: none;
-    cursor: pointer;
-}
-
-#liens {
-    list-style-type: none;
-    display: inline-flex;
-    width: 90%;
-    justify-content: space-between;
-    column-gap: 20px;
-    row-gap: 5px;
-    flex-wrap: wrap;
-}
-
-#liens a {
-    color: #692389;
-    font-size: medium;
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
     font-weight: bolder;
-    text-decoration: none;
 }
 
-nav {
-    align-self: center;
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    margin : 20px 0;
 }
 
-#liens li {
-    text-align: center;
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin : 20px 0;
 }
 
-/* Ajoutez d'autres styles au besoin */
+#refLegende {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
