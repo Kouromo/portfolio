@@ -372,3 +372,16 @@ footer
 {
     color: black;
 }
+
+#main-title a:hover
+{
+    background-color: #692389;
+    color: white;
+}
+
+#hebergementSection a:hover
+{
+    background-color: white;
+    color: #692389;
+    box-shadow: 0 0 10px #692389;
+}

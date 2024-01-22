@@ -1,11 +1,27 @@
 /*écrans de téléphone*/
 @media screen and (max-width: 480px) {
-    #gameJam {
+    section {
         flex-direction: column;
     }
+
 }
 
+/*écrans d'ordinateurs*/
+@media screen and (min-width: 481px) {
+    section {
+        flex-direction: row;
+    }
 
+    article {
+        min-width: 300px;
+        max-width: 450px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
 
 
 body {
@@ -28,6 +44,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
+    display: flex;
 }
 
 h2 {
@@ -58,17 +75,16 @@ p {
     color: #fff;
 }
 
-aside img {
-    width: 60%;
-    height: auto;
+img {
     padding: 10px;
 }
 
-#gameJam {
-    display: flex;
-}
-
-#gameJamPic {
+aside {
     text-align: center;
     align-self: center;
+}
+
+img {
+    height: 100px;
+    width: auto;
 }
