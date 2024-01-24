@@ -53,7 +53,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-p {
+p:not(#titre){
     line-height: 1.6;
     margin-bottom: 15px;
 }
