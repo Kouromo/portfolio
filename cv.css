@@ -56,11 +56,6 @@ main
         height:auto;
     }
 
-    #iconesReseaux
-    {
-        flex-direction: column;
-    }
-    
     #liens
     {
         flex-direction: column;
@@ -268,6 +263,10 @@ a
     margin: 2% 0;
 }
 
+#langues {
+    padding: 20px;
+}
+
 /**********************SECTION******************/
 
 #competences
@@ -348,6 +347,6 @@ a
 
 #description p
 {
-    margin: 20px;
+    margin: 12px;
 }
 

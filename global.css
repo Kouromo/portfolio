@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Noto Sans;
+}
+
 li:not(.puce){
     list-style-type: none;
 }
