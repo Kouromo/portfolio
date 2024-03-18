@@ -7,8 +7,9 @@ header {
 
 body {
     background-image: url("pexels-photo-1819650.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 @media screen and (min-width: 751px) {
@@ -188,7 +189,6 @@ h1 {
     grid-template-columns: 1fr;
     height: fit-content;
     row-gap: 30px;
-    background-color: #c59cd8;
     text-align: center;
 }
 
