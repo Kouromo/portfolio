@@ -12,23 +12,21 @@
 </head>
 
 <body>
-    <header aria-label="Bandeau de la page">
-        <p id="titre">Kouromo</p>
-        <nav aria-label="Menu du CV">
-            <ul id="liens">
-                <li>
-                    <a href="index.html" class="deroulant" aria-label="Retour à la page d'accueil">Accueil</a>
-                    <ul class="sous">
-                        <li><a href="index.html#hebergementSection" aria-label="Défilement sur la section à propos de l'auteur">A PROPOS DE MOI</a></li>
-                        <li><a href="index.html#interets" aria-label="Défilement sur la section des centres d'intérêts de l'auteur">INTÉRÊTS</a></li>
-                        <li><a href="index.html#infosContact" aria-label="Défilement sur la section de contact de l'auteur">CONTACT</a></li>
-                    </ul>
-                </li>
-                <li><a href="portfolio.html" aria-label="Redirection sur la page du portfolio de l'auteur">Portfolio</a></li>
-                <li><a href="#" aria-current="page" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
-            </ul>
-        </nav>
-
+    <header aria-label="Présentation">
+        <div id="soulignage">
+            <a href="index.html" aria-label="Redirection vers la page d'accueil", id="titre">Kouromo</a>
+            <nav id="navigation" aria-label="Menu de l'accueil">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul id="liens" class="menu">
+                    <li><a href="portfolio.html" aria-label="Redirection sur la page du portfolio de l'auteur">Portfolio</a></li>
+                    <li><a href="#" aria-current="page">CV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <aside id="infosPersos" aria-label="Infos personnelles de l'auteur">
@@ -112,8 +110,9 @@
                 <h2>LANGUES</h2>
                 <hr>
                 <div id = "langues">
-                    <span id = "langue2">Français (langue maternelle)</span>
-                    <span id = "langue1">Anglais C1</span><br>
+                    <p>Français (langue maternelle)<br>
+                    Anglais (C1)
+                    </p>
                 </div>
             </article>
         </aside>
@@ -180,7 +179,8 @@
                             de Bayonne et du Pays Basque, Bayonne
                         </span>
                         <p>
-                            Formation au métier d'analyste-programmeur parcours D : développement applications et management du système d'information (Orienté multimédia)
+                            Formation au métier d'analyste-programmeur parcours D :<br>
+                            développement applications et management du système d'information (Orienté multimédia)
                         </p>
                     </div>
                 </section>

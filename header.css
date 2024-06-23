@@ -3,7 +3,6 @@
     #liens {
         display: none;
         flex-direction: column;
-        background-color: #313131;
     }
 
     .burger-menu {
@@ -29,11 +28,6 @@
         margin-bottom: 10px;
     }
 
-    .sous {
-        display: block;
-        margin-left: 20px;
-    }
-
     .bar {
         width: 25px;
         height: 3px;
@@ -57,46 +51,14 @@
     #navigation {
         justify-self: end;
     }
-
-    .sous {
-        display: none;
-    }
 }
 
 /* GRAND ECRANS*/
 @media screen and (min-width: 751px) {
-    .sous {
-        display: none;
-    }
-
-    nav a {
+    nav a, #titleDiv > a {
         display: block;
         padding: 10px 0px;
         text-decoration: none;
-    }
-
-    nav > ul li:hover .sous {
-        display: block;
-        position: absolute;
-        z-index: 1;
-    }
-
-    .sous li {
-        float: none;
-        text-align: left;
-    }
-
-    .sous a {
-        padding: 10px;
-        color: white;
-        border-bottom: none;
-        background-color: #313131;
-        width: 200px;
-    }
-
-    .sous a:hover {
-        border-bottom: none;
-        background-color: rgb(137, 25, 137);
     }
 
     #liens {
@@ -113,11 +75,6 @@
     .burger-menu {
         display: none;
         cursor: pointer;
-    }
-
-    #navigation > ul > li > a:hover
-    {
-        color: rgb(194, 136, 194);
     }
 
 }
@@ -172,4 +129,8 @@ nav
 
 header {
     min-height: 50px;
+}
+
+#titleDiv {
+    align-self: center;
 }
