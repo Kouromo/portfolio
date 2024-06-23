@@ -13,7 +13,7 @@
 
     <body>
         <header aria-label="Présentation">
-            <div id="soulignage">
+            <!-- <div id="soulignage">
                 <a href="#" aria-current="page", id="titre">Kouromo</a>
                 <nav id="navigation" aria-label="Menu de l'accueil">
                     <div class="burger-menu" onclick="toggleMenu()">
@@ -26,7 +26,72 @@
                         <li><a href="cv.html" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
                     </ul>
                 </nav>
-            </div>
+            </div> -->
+
+            <nav>
+                <div class="wrapper">
+                  <div class="logo"><a href="#">Logo</a></div>
+                  <input type="radio" name="slider" id="menu-btn">
+                  <input type="radio" name="slider" id="close-btn">
+                  <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                      <a href="#" class="desktop-item">Dropdown Menu</a>
+                      <input type="checkbox" id="showDrop">
+                      <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+                      <ul class="drop-menu">
+                        <li><a href="#">Drop menu 1</a></li>
+                        <li><a href="#">Drop menu 2</a></li>
+                        <li><a href="#">Drop menu 3</a></li>
+                        <li><a href="#">Drop menu 4</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#" class="desktop-item">Mega Menu</a>
+                      <input type="checkbox" id="showMega">
+                      <label for="showMega" class="mobile-item">Mega Menu</label>
+                      <div class="mega-box">
+                        <div class="content">
+                          <div class="row">
+                            <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
+                          </div>
+                          <div class="row">
+                            <header>Design Services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Graphics</a></li>
+                              <li><a href="#">Vectors</a></li>
+                              <li><a href="#">Business cards</a></li>
+                              <li><a href="#">Custom logo</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Email Services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Personal Email</a></li>
+                              <li><a href="#">Business Email</a></li>
+                              <li><a href="#">Mobile Email</a></li>
+                              <li><a href="#">Web Marketing</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Security services</header>
+                            <ul class="mega-links">
+                              <li><a href="#">Site Seal</a></li>
+                              <li><a href="#">VPS Hosting</a></li>
+                              <li><a href="#">Privacy Seal</a></li>
+                              <li><a href="#">Website design</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+                  <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                </div>
+              </nav>
 
             <section id="main-title">
                 <h1>Matéo Alves</h1>
@@ -57,7 +122,6 @@
                     à ce que j'écris grâce à la programmation et  je souhaite travailler dans un domaine où je peux retrouver ce plaisir. Étant également
                     passioné du jeu vidéo, j'espère pour en faire mon métier.
                 </p>
-                <a href="#interets" aria-label="Défilement vers les compétences de l'auteur">VOIR MES INTÉRÊTS</a>
             </section>
 
             <section id="interets" aria-label="Centres d'intérêt de Matéo">
