@@ -33,9 +33,7 @@ body {
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    padding-top: 100px;
 }
 
 section {

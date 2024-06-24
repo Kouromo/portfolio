@@ -13,26 +13,27 @@
 
     <body>
         <header aria-label="Présentation">
-            <div id="soulignage">
-                <a href="#" aria-current="page", id="titre">Kouromo</a>
-                <nav id="navigation" aria-label="Menu de l'accueil">
-                    <div class="burger-menu" onclick="toggleMenu()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <ul id="liens" class="menu">
-                        <li><a href="portfolio.html" aria-label="Redirection sur la page du portfolio de l'auteur">Portfolio</a></li>
-                        <li><a href="cv.html" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <!-- Header https://codepen.io/fadzrinmadu/pen/bGqrJjB -->
+                <div class="wrapper">
+                  <div class="logo"><a href="#">Kouromo</a></div>
+                  <input type="radio" name="slider" id="menu-btnM">
+                  <input type="radio" name="slider" id="close-btnM">
+                  <ul class="nav-links">
+                    <label for="close-btnM" class="btnM close-btnM"><i class="fas fa-times"></i></label>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                  </ul>
+                  <label for="menu-btnM" class="btnM menu-btnM"><i class="fas fa-bars"></i></label>
+                </div>
+              </nav>
 
             <section id="main-title">
                 <h1>Matéo Alves</h1>
                 <div class="LigneBlanche"></div>
                 <p>Développeur informatique passioné de jeu vidéo et ayant un intérêt pour le graphisme.</p>
-                <!-- <a href = "cv.html" aria-label="Redirection vers le CV de l'auteur">MON CV</a> -->
+                <!-- Bouton galaxy https://uiverse.io/StealthWorm/spotty-horse-48 -->
                 <a class="btn" aria-label="Redirection vers le portfolio de l'auteur" href="portfolio.html">
                     <strong>PORTFOLIO</strong>
                     <div id="container-stars">
@@ -51,13 +52,12 @@
         <main>
             <section id="hebergementSection" aria-label="À propos de l'auteur">
                 <h2>À propos de moi</h2>
-                <div class="LigneViolette"></div>
+                <div class="LigneVerte"></div>
                 <p>
                     Étant passionné par l'informatique depuis très jeune, j'éprouve une forte motivation à intégrer ce domaine. J'aime beaucoup donner vie 
                     à ce que j'écris grâce à la programmation et  je souhaite travailler dans un domaine où je peux retrouver ce plaisir. Étant également
                     passioné du jeu vidéo, j'espère pour en faire mon métier.
                 </p>
-                <a href="#interets" aria-label="Défilement vers les compétences de l'auteur">VOIR MES INTÉRÊTS</a>
             </section>
 
             <section id="interets" aria-label="Centres d'intérêt de Matéo">
@@ -95,19 +95,12 @@
         </main>
         <footer aria-label="Contact avec l'auteur">
             
-            <h2 id = "titreContact">Prendre contact avec moi :</h2>
-            <div class="LigneViolette" id = "ligneFooter"></div>
+            <h2 id = "titreContact">Plus d'informations :</h2>
+            <div class="LigneVerte" id = "ligneFooter"></div>
             
 
             <section id ="infosContact">
-                <p id = "sousTitreContact">N'hésitez pas à prendre contact</p>
                 <div id = "iconeContact">
-                    <div id = "mailEtudiant">
-                        <i class="fa-solid fa-school"></i>
-                        <a href="mailto:malves002@iutbayonne.univ-pau.fr">
-                            <p aria-label="Mail étudiant">malves002<br class="phoneReturn">@iutbayonne.univ-pau.fr</p>
-                        </a>
-                    </div>
                     <div id = "mailPerso">
                         <i class="fa-regular fa-envelope"></i>
                         <a href="mailto:mateoalves47@gmail.com">
