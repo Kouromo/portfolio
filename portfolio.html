@@ -12,20 +12,21 @@
     </head>
     <body>
         <header aria-label="Présentation">
-            <div id="soulignage">
-                <a href="index.html" aria-label="Redirection vers la page d'accueil", id="titre">Kouromo</a>
-                <nav id="navigation" aria-label="Menu de l'accueil">
-                    <div class="burger-menu" onclick="toggleMenu()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <ul id="liens" class="menu">
-                        <li><a href="#" aria-current="page">Portfolio</a></li>
-                        <li><a href="cv.html" aria-label="Redirection sur la page du CV de l'auteur">CV</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <!-- Header https://codepen.io/fadzrinmadu/pen/bGqrJjB -->
+                <div class="wrapper">
+                  <div class="logo"><a href="#">Kouromo</a></div>
+                  <input type="radio" name="slider" id="menu-btnM">
+                  <input type="radio" name="slider" id="close-btnM">
+                  <ul class="nav-links">
+                    <label for="close-btnM" class="btnM close-btnM"><i class="fas fa-times"></i></label>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                  </ul>
+                  <label for="menu-btnM" class="btnM menu-btnM"><i class="fas fa-bars"></i></label>
+                </div>
+              </nav>
         </header>
         <main>
             <section>
