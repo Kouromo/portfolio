@@ -289,20 +289,14 @@ footer
     grid-column: 1;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 40% 40% 1fr;
+    grid-template-columns: 1fr 60% 1fr;
 }
 
-#mailEtudiant
-{
-    grid-row: 1;
-    grid-column: 2;
-    justify-self: center;
-}
 
 #mailPerso
 {
     grid-row: 1;
-    grid-column: 3;
+    grid-column: 2;
     justify-self: center;
 }
 
