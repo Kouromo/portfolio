@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="header.css" />
-        <link rel="stylesheet" href="global.css" />
-        <title>Page d'accueil de Matéo</title>
-        <link rel="icon" href="websiteicon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/7c2235d2ba.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <header aria-label="Présentation">
-            <nav>
-                <!-- Header https://codepen.io/fadzrinmadu/pen/bGqrJjB -->
-                <div class="wrapper">
-                  <div class="logo"><a href="#">Kouromo</a></div>
-                  <input type="radio" name="slider" id="menu-btnM">
-                  <input type="radio" name="slider" id="close-btnM">
-                  <ul class="nav-links">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Page d'accueil de Matéo</title>
+    <link rel="icon" href="websiteicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7c2235d2ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header aria-label="Présentation">
+        <nav>
+            <!-- Header https://codepen.io/fadzrinmadu/pen/bGqrJjB -->
+            <div class="wrapper">
+                <div class="logo"><a href="#">Kouromo</a></div>
+                <input type="radio" name="slider" id="menu-btnM">
+                <input type="radio" name="slider" id="close-btnM">
+                <ul class="nav-links">
                     <label for="close-btnM" class="btnM close-btnM"><i class="fas fa-times"></i></label>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="cv.html">CV</a></li>
-                  </ul>
-                  <label for="menu-btnM" class="btnM menu-btnM"><i class="fas fa-bars"></i></label>
+                </ul>
+                <label for="menu-btnM" class="btnM menu-btnM"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+
+        <section id="main-title">
+            <h1>Matéo Alves</h1>
+            <div class="LigneBlanche"></div>
+            <p>Développeur informatique passioné de jeu vidéo et ayant un intérêt pour le graphisme.</p>
+            <!-- Bouton galaxy https://uiverse.io/StealthWorm/spotty-horse-48 -->
+            <a class="btn" aria-label="Redirection vers le portfolio de l'auteur" href="portfolio.html">
+                <strong>PORTFOLIO</strong>
+                <div id="container-stars">
+                    <div id="stars"></div>
+                </div>
+                <div id="glow">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </a>
+
+        </section>
+
+
+    </header>
+    <main>
+        <section id="hebergementSection" aria-label="À propos de l'auteur">
+            <h2>À propos de moi</h2>
+            <div class="LigneVerte"></div>
+            <p>
+                Étant passionné par l'informatique depuis très jeune, j'éprouve une forte motivation à intégrer ce
+                domaine. J'aime beaucoup donner vie
+                à ce que j'écris grâce à la programmation et je souhaite travailler dans un domaine où je peux retrouver
+                ce plaisir. Étant également
+                passioné du jeu vidéo, j'espère pour en faire mon métier.
+                Mes trois valeurs principales sont la coopération, le confort et la confiance.
+            </p>
+        </section>
+
+        <section id="interets" aria-label="Centres d'intérêt de Matéo">
+            <h2>Intérêts</h2>
+            <div class="LigneBlanche"></div>
+            <article>
+                <div id="soins" class="icones">
+                    <i class="fa-solid fa-pencil"></i>
+                    <h3>Graphiste</h3>
+                    <p>S'intéresse beaucoup à l'art en suivant des artistes et en pratiquant sur photoshop</p>
+                </div>
+                <div id="infos" class="icones">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programmeur</h3>
+                    <p>
+                        Code en C#, Java, C++, HTML5, <br>
+                        CSS3, PHP, Python, MySQL
+                    </p>
                 </div>
               </nav>
 
@@ -108,10 +162,83 @@
                         </a>
                     </div>
                 </div>
-            </section>
-        </footer>
-        <!--Scripts -->
-        <script src="src.js"></script>
-    </body>
+                <div id="calins" class="icones">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h3>Création et intéressement au jeu vidéo</h3>
+                    <p>
+                        Création de jeux au cours de Game Jam <br>
+                        (plus d'informations dans le portfolio)
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer aria-label="Contact avec l'auteur">
+
+        <h2 id="titreContact">Plus d'informations :</h2>
+        <div class="LigneVerte" id="ligneFooter"></div>
+
+
+        <section id="infosContact">
+            <a class="buttonSocials" href="www.linkedin.com/in/mateoalves/" id="linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+            </a>
+
+            <a class="buttonSocials" href="https://x.com/Kouromo_" id="X">
+                <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                        d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a class="buttonSocials" href="https://github.com/Kouromo" id="github">
+                <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                        d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a class="buttonSocials" href="mailto:mateoalves47@gmail.com" id="mail">
+                <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                        d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </a>
+
+        </section>
+    </footer>
+    <!-- TOOLTIP -->
+    <!-- Development -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <!-- Production -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('#linkedin', {
+          content: 'Mon linkedin',
+        });
+        tippy('#X', {
+          content: 'Mon X',
+        });
+        tippy('#github', {
+          content: 'Mon GitHub',
+        });
+        tippy('#mail', {
+          content: 'Me contacter par mail',
+        });
+    </script>
+</body>
 
 </html>

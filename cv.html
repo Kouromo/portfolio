@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="cv.css" />
     <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="header.css">
     <link rel="icon" href="websiteicon.png">
     <title> CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,21 @@
 
 <body>
     <header aria-label="Présentation">
-        <div id="soulignage">
-            <a href="index.html" aria-label="Redirection vers la page d'accueil", id="titre">Kouromo</a>
-            <nav id="navigation" aria-label="Menu de l'accueil">
-                <div class="burger-menu" onclick="toggleMenu()">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <ul id="liens" class="menu">
-                    <li><a href="portfolio.html" aria-label="Redirection sur la page du portfolio de l'auteur">Portfolio</a></li>
-                    <li><a href="#" aria-current="page">CV</a></li>
+        <nav>
+            <!-- Header https://codepen.io/fadzrinmadu/pen/bGqrJjB -->
+            <div class="wrapper">
+                <div class="logo"><a href="#">Kouromo</a></div>
+                <input type="radio" name="slider" id="menu-btnM">
+                <input type="radio" name="slider" id="close-btnM">
+                <ul class="nav-links">
+                    <label for="close-btnM" class="btnM close-btnM"><i class="fas fa-times"></i></label>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">CV</a></li>
                 </ul>
-            </nav>
-        </div>
+                <label for="menu-btnM" class="btnM menu-btnM"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
     </header>
     <main>
         <aside id="infosPersos" aria-label="Infos personnelles de l'auteur">
@@ -72,21 +74,6 @@
                     </tr>
                 </table>
             </article>
-            <!-- <article>
-                <hr>
-                <h2>TÉLÉCHARGER MON RÉSUMÉ</h2>
-                <hr>
-                <div id = "fichiers">
-                    <div class = "fichierResume">
-                        <a href="#" aria-label="Téléchargement du fichier resume.pdf" target="_blank">resume.pdf</a>
-                        <i class="fa-regular fa-file-pdf"></i>
-                    </div>
-                    <div class = "fichierResume">
-                        <a href="#" aria-label="Téléchargement du fichier resume.docx" target="_blank">resume.docx</a>
-                        <i class="fa-regular fa-file-word"></i>
-                    </div>
-                </div>
-            </article> -->
             <article>
                 <hr>
                 <h2>MES RÉSEAUX SOCIAUX</h2>
@@ -196,15 +183,9 @@
                         </p>
                     </div>
                 </section>
-
-                <!-- <div id = "diplome">
-                    <a href="#" aria-label="Lien pour télécharger le diplôme de l'auteur">Télécharger le diplôme</a>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                </div> -->
             </article>
         </section>
     </main>
-    <script src="src.js"></script>
 </body>
 
 </html>
