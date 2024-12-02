@@ -1,19 +1,26 @@
 
 /*écrans de téléphone*/
-@media screen and (max-width: 480px) {
-  :root
-  {
-    --multiplyWidth: 1;
-    --multiplyHeight: 1;
-  }
-}
+/*@media screen and (max-width: 480px) {
+
+
+
+
+}*/
 
 /*écrans d'ordinateurs*/
 @media screen and (min-width: 481px) {
-  :root
-  {
-    --multiplyWidth: 2.5;
-    --multiplyHeight: 3;
+  .card {
+    width: 30vw;
+    height: 80vh;
+  }
+
+  .bg {
+    inset: 20px;
+  }
+
+  .blob {
+    width: 20vw;
+    height: 70vh;
   }
 }
 
@@ -33,14 +40,22 @@ main {
   width: auto;
   height: 80%;
   max-height: 32vh;
+  border: #4f9381 solid 5px;
+}
+
+.bg > a:not(.styled-link) {
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: -webkit-fill-available;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
 }
 
 /* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
 .card {
     position: relative;
-    width: calc(200px * var(--multiplyWidth));
-    max-width: 30vw;
-    height: calc(250px * var(--multiplyHeight));
     border-radius: 14px;
     z-index: 1111;
     overflow: hidden;
@@ -54,10 +69,6 @@ main {
   
   .bg {
     position: absolute;
-    top: calc(5px * var(--multiplyHeight));
-    left: calc(5px * var(--multiplyWidth));
-    width: calc(190px * var(--multiplyWidth));
-    height: calc(240px * var(--multiplyHeight));
     z-index: 2;
     background: rgba(255, 255, 255, .95);
     backdrop-filter: blur(24px);
@@ -71,8 +82,6 @@ main {
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: calc(150px * var(--multiplyWidth));
-    height: calc(150px * var(--multiplyHeight));
     border-radius: 50%;
     background-color: #4f9381;
     opacity: 1;
