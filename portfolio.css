@@ -29,10 +29,17 @@ main {
     justify-content: center;
 }
 
+.logo {
+  width: auto;
+  height: 80%;
+  max-height: 32vh;
+}
+
 /* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
 .card {
     position: relative;
     width: calc(200px * var(--multiplyWidth));
+    max-width: 30vw;
     height: calc(250px * var(--multiplyHeight));
     border-radius: 14px;
     z-index: 1111;
