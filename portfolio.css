@@ -1,94 +1,126 @@
-/*écrans de téléphone*/
-@media screen and (max-width: 480px) {
-    section {
-        flex-direction: column;
-    }
-
+:root {
+  --text-color: #000000;
 }
+
+
+/*écrans de téléphone*/
+/*@media screen and (max-width: 480px) {
+
+
+
+
+}*/
 
 /*écrans d'ordinateurs*/
 @media screen and (min-width: 481px) {
-    section {
-        flex-direction: row;
-    }
+  .card {
+    width: 30vw;
+    height: 80vh;
+  }
 
-    article {
-        min-width: 300px;
-        max-width: 450px;
-    }
+  .bg {
+    inset: 20px;
+  }
 
-    aside {
-        width: 100%;
-    }
-
+  .blob {
+    width: 20vw;
+    height: 70vh;
+  }
 }
 
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  background-color: #e9e9e9;
 }
 
 main {
-    padding-top: 100px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 100px);
 }
 
-section {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+.logo {
+  height: auto;
+  max-height: 40vh;
+  box-shadow:
+    0 0 30px var(--text-color),
+    0 0 80px var(--text-color);
+}
+
+.logo:not(#iut) {
+  width: 20%;
+  min-width: 10vw;
+}
+
+#iut {
+  width: 30%;
+  min-width: 10vw;
+}
+
+.bg > div {
+  height: -webkit-fill-available;
+  width: 100%;
+  position: absolute;
+  align-content: center;
+  text-align: center;
+}
+
+/* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
+.card {
+    position: relative;
+    border-radius: 14px;
+    z-index: 80;
+    overflow: hidden;
     display: flex;
-}
-
-h2 {
-    color: #692389;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-p:not(#titre) {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.styled-link {
-    color: #692389;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    padding: 8px 15px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.styled-link:hover {
-    background-color: #692389;
-    color: #fff;
-}
-
-img {
-    padding: 10px;
-}
-
-aside {
-    text-align: center;
-    align-self: center;
-}
-
-img {
-    height: 100px;
-    width: auto;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #bebebe;
+    margin: auto;
+  }
+  
+  .bg {
+    position: absolute;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+  
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+  
