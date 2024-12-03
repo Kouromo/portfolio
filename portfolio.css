@@ -1,3 +1,7 @@
+:root {
+  --text-color: #000000;
+}
+
 
 /*écrans de téléphone*/
 /*@media screen and (max-width: 480px) {
@@ -26,21 +30,22 @@
 
 
 body {
-  background-color: #ceebce;
+  background-color: #e9e9e9;
 }
 
 main {
   padding-top: 100px;
   display: flex;
   justify-content: center;
+  height: calc(100vh - 100px);
 }
 
 .logo {
   height: auto;
   max-height: 40vh;
   box-shadow:
-    0 0 30px #a6e4d5,
-    0 0 80px #a6e4d5;
+    0 0 30px var(--text-color),
+    0 0 80px var(--text-color);
 }
 
 .logo:not(#iut) {
@@ -53,14 +58,12 @@ main {
   min-width: 10vw;
 }
 
-.bg > a:not(.styled-link) {
-  display: block;
-  position: absolute;
-  text-align: center;
+.bg > div {
   height: -webkit-fill-available;
   width: 100%;
+  position: absolute;
   align-content: center;
-  justify-content: center;
+  text-align: center;
 }
 
 /* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
@@ -73,7 +76,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #bebebe;
     margin: auto;
   }
   
@@ -93,7 +96,7 @@ main {
     top: 50%;
     left: 50%;
     border-radius: 50%;
-    background-color: #a6e4d5;
+    background-color: var(--text-color);
     opacity: 1;
     filter: blur(12px);
     animation: blob-bounce 5s infinite ease;
