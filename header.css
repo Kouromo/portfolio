@@ -85,6 +85,7 @@ nav .wrapper {
         overflow-y: auto;
         box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
         transition: all 0.3s ease;
+        box-sizing: border-box;
     }
 
     /* custom scroll bar */
