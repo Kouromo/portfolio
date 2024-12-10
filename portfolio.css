@@ -99,6 +99,10 @@ main {
   display: flex;
 }
 
+.styled-link, h2, p{
+  margin: 10px;
+}
+
 .logo {
   transition: transform .4s;
   box-shadow:
@@ -172,3 +176,5 @@ main {
     }
   }
   
+
+  /*From From Uiverse.io by adamgiebl https://uiverse.io/adamgiebl/pink-chicken-70*/
