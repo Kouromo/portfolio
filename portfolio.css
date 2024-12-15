@@ -129,7 +129,8 @@ main {
 }
 
 .buttons {
-  justify-self: center;
+  justify-self: end;
+  margin-right: 20px;
 }
 
 /* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
