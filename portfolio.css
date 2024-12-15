@@ -112,12 +112,24 @@ main {
 }
 
 
-.bg > div {
+.bg > div:not(.buttons) {
   height: -webkit-fill-available;
   width: 100%;
   position: absolute;
   align-content: center;
   text-align: center;
+}
+
+.bg > p {
+  height: 80px;
+}
+
+.imgLink > a {
+  width: min-content;
+}
+
+.buttons {
+  justify-self: center;
 }
 
 /* From Uiverse.io by dylanharriscameron https://uiverse.io/dylanharriscameron/stupid-mole-90 */ 
@@ -190,7 +202,7 @@ main {
   border-radius: 0.8em;
   cursor: pointer;
   border: none;
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background: linear-gradient(to right, #2de269, #4f9381);
   color: ghostwhite;
   overflow: hidden;
 }
